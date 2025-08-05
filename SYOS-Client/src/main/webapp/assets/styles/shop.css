@@ -1,0 +1,131 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+/* Navbar Styles */
+.customer-navbar {
+    background-color: #1D4ED8; /* Blue color */
+    color: white;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customer-navbar-content h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.customer-navbar-content p {
+    font-size: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Shop Page Container */
+.shop-container {
+    margin-top: 120px; /* Offset for fixed navbar */
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Available Items Section */
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.item-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.item-card h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.item-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.item-card button {
+    background-color: #1D4ED8;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.item-card button:hover {
+    background-color: #2563EB;
+}
+
+/* Footer Styles */
+.customer-footer {
+    background-color: #1D4ED8; /* Blue color */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+.customer-footer p {
+    font-size: 1rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    .item-card {
+        padding: 1rem;
+    }
+
+    .items-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grocery-banner img {
+        max-width: 100%;
+    }
+}

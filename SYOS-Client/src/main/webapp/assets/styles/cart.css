@@ -1,0 +1,190 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+/* Navbar Styles */
+.customer-navbar {
+    background-color: #1D4ED8;
+    color: white;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customer-navbar-content h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.customer-navbar-content p {
+    font-size: 1rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #2563EB;
+}
+
+.nav-links a:hover {
+    background-color: #1D4ED8;
+}
+
+/* Cart Container */
+.cart-container {
+    margin-top: 120px;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Cart Items Section */
+.cart-items-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-details h3 {
+    font-size: 1.25rem;
+}
+
+.item-details p {
+    font-size: 1rem;
+    color: #4b5563;
+}
+
+/* Quantity Controls */
+.quantity-controls {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.quantity-controls button {
+    padding: 0.5rem 1rem;
+    background-color: #1D4ED8;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.quantity-controls button:hover {
+    background-color: #2563EB;
+}
+
+/* Remove Button */
+.remove-btn {
+    padding: 0.5rem 1rem;
+    margin-left: 5px;
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #B20000;
+}
+
+/* Empty Cart Message */
+.empty-cart {
+    font-size: 1.125rem;
+    color: #4b5563;
+}
+
+.empty-cart a {
+    color: #1D4ED8;
+    text-decoration: none;
+}
+
+/* Cart Summary Section */
+.cart-summary {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.cart-summary h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1D4ED8;
+}
+
+.cart-summary button {
+    padding: 1rem 2rem;
+    background-color: #1D4ED8;
+    color: white;
+    font-size: 1.125rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-summary button:hover {
+    background-color: #2563EB;
+}
+
+/* Footer Styles */
+.customer-footer {
+    background-color: #1D4ED8;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+.customer-footer p {
+    font-size: 1rem;
+}

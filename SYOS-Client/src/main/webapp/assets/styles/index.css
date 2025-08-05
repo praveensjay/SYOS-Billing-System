@@ -1,0 +1,191 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 100vh; /* Ensure the body fills the viewport */
+    display: flex;
+    flex-direction: column; /* Align the header, content, and footer vertically */
+}
+
+/* Header Styles */
+header {
+    background-color: #1D4ED8; /* Blue color */
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    position: fixed; /* Keep header at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+header p {
+    font-size: 1.2rem;
+    padding-right: 10px;
+}
+
+.auth-links {
+    display: flex;
+    gap: 1rem; /* Space between the Login and Register buttons */
+}
+
+/* Button Styles */
+.auth-links a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth-links .bg-green-600 {
+    background-color: #16A34A; /* Green color */
+    color: white;
+}
+
+.auth-links .bg-green-600:hover {
+    background-color: #10B981; /* Lighter green on hover */
+    transform: translateY(-2px);
+}
+
+.auth-links .bg-blue-600 {
+    background-color: #1D4ED8; /* Blue color */
+    color: white;
+}
+
+.auth-links .bg-blue-600:hover {
+    background-color: #2563EB; /* Lighter blue on hover */
+    transform: translateY(-2px);
+}
+
+.auth-links a:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+section.bg-white {
+    padding: 4rem 2rem;
+    background-color: white;
+    margin-top: 120px; /* Adjust for fixed header */
+    text-align: center;
+    flex: 1; /* Allow this section to grow and take up available space */
+}
+
+section.bg-white h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1D4ED8; /* Blue color */
+}
+
+section.bg-white p {
+    color: #4b5563;
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+}
+
+section.bg-white a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+section.bg-white .bg-green-600 {
+    background-color: #16A34A; /* Green color */
+    color: white;
+}
+
+section.bg-white .bg-green-600:hover {
+    background-color: #10B981; /* Lighter green on hover */
+    transform: translateY(-2px);
+}
+
+/* Category Card Styles */
+.bg-gray-200 {
+    background-color: #E5E7EB; /* Light Gray */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.bg-gray-200:hover {
+    background-color: #1D4ED8; /* Blue hover effect */
+}
+
+.bg-gray-200 img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.bg-gray-200 h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1D4ED8; /* Blue text */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1D4ED8; /* Blue color */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto; /* Ensure footer stays at the bottom of the page */
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    header {
+        padding: 1rem;
+        flex-direction: column; /* Stack the header content on smaller screens */
+        text-align: center;
+    }
+
+    section.bg-white {
+        padding: 3rem 1.5rem;
+    }
+
+    section.py-8 {
+        padding: 3rem 1.5rem;
+    }
+
+    section.bg-white .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        font-size: 0.875rem;
+    }
+}

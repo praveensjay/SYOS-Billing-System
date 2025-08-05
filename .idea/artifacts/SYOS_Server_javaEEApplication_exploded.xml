@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="SYOS-Server:javaEEApplication exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/SYOS-Server_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="SYOS-Server/javaeeApplication/javaEEApplication" />
+    </root>
+  </artifact>
+</component>

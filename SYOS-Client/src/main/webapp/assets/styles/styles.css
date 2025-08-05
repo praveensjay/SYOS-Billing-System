@@ -1,0 +1,123 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+
+/* Container */
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    color: #1D4ED8; /* Blue color */
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Form Styles */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.25rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #1D4ED8; /* Blue focus border */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #1D4ED8;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #2563EB; /* Lighter blue on hover */
+    transform: translateY(-2px);
+}
+
+/* Links */
+p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+a {
+    color: #1D4ED8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Error and Success Messages */
+#error-message,
+.success-message {
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+#error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    .container {
+        padding: 1.5rem;
+        width: 90%; /* Ensure the form fits well on smaller screens */
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
