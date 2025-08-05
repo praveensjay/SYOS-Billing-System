@@ -31,11 +31,6 @@ A clean-coded, modular, and extensible console-based billing application for the
 ## 🚀 How to Run
 
 1. Clone the repo:
-```bash
-git clone https://github.com/your-username/syos-billing-system.git
-cd syos-billing-system
-```
-
 2. Open with **IntelliJ** or **Visual Studio Code**
 3. Make sure Java and JUnit are installed
 4. Run `BillingUI.java` or `Main.java`
@@ -51,12 +46,6 @@ Run BillingServiceTest.java, UserDAOTest.java, etc.
 
 ---
 
-## 📄 Assignment Reports
-
-- [`CCCP_Assignment_Report.pdf`](./CCCP_Assignment_Report.pdf) – Clean Coding & SOLID Implementation
-- [`COMP63038_Assignment2_Specification.pdf`](./COMP63038_Assignment2_Specification.pdf) – Client-Server Concurrency Spec
-
----
 
 ## 📚 Future Improvements
 
